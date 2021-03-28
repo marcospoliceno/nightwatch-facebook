@@ -1,0 +1,33 @@
+{
+  "name": "nightwatch-facebook-login",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch",
+    "login": "nightwatch --group login"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcospoliceno/nightwatch-facebook.git"
+  },
+  "author": "marcospoliceno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcospoliceno/nightwatch-facebook/issues"
+  },
+  "homepage": "https://github.com/marcospoliceno/nightwatch-facebook#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "babel-preset-es2015": "^6.24.1",
+    "nightwatch": "^1.6.0",
+    "nightwatch-api": "^3.0.2"
+  },
+  "devDependencies": {
+    "chromedriver": "^89.0.0",
+    "geckodriver": "^1.22.2",
+    "selenium-server": "^3.141.59"
+  }
+}
