@@ -13,7 +13,14 @@ module.exports = {
             return this.pause(100)
                 .click('@buttonWebSiteDesbravador')
         },
-        acessoFacebook: function () {
+        acessoValidoFacebook: function () {
+            return this.pause(100)
+                .waitForElementVisible('@inputEmailNumber', 5000)
+                .waitForElementVisible('@inputPassword', 5000)
+                .setValue('@inputEmailNumber', data.login.user)
+                .setValue('@inputPassword', data.login.pass)
+                .waitForElementVisible('@buttonEntrar', 1000)
+                .click('@buttonEntrar')
         }
     },
     elements: {
@@ -37,6 +44,9 @@ module.exports = {
         listIdiomasChines: "#pageFooter > ul > li:nth-child(9) a",
         listIdiomasJapones: "#pageFooter > ul > li:nth-child(10) a",
         buttonAdicionarIdiomas: { locateStrategy: 'xpath', selector: '//*[@id="pageFooter"]/ul/li[11]/a' },
+        spanBemVindo: "[role='main'] span",
+        buttonConta: "[aria-label='Conta']",
+        // spanBemVindo: {locateStrategy: 'xpath', selector: '//*[@id="mount_0_0_vN"]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div[2]/div/div/div[1]/span'},
 
         footerCadastrese: "#pageFooterChildren > ul > li:nth-child(1) > a",
         footerEntrar: "#pageFooterChildren > ul > li:nth-child(2) > a",

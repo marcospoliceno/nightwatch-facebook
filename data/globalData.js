@@ -1,7 +1,7 @@
 module.exports = {
     login: {
-        usuarioCorreto: 'andressa.celant@desbravador.com.br',
-        senha: 'teste',
+        user: 'marcostestvizir@gmail.com',
+        pass: '!@#123abc',
     },
     urls: {
         urlFacebook: 'https://www.facebook.com/',

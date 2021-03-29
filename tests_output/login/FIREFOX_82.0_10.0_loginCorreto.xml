@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="login.loginCorreto"
+    errors="0" failures="0" hostname="" id="" package="login" skipped="0"
+    tests="1" time="4.335" timestamp="">
+  
+    <testcase name="Deve estar na página de login e inserir os dados válidos de email/telefone e senha e entrar" classname="login.loginCorreto" time="4.335" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>
