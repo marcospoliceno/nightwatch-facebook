@@ -5,9 +5,9 @@
 
   <testsuite name="cadastro.cadastroNovaConta"
     errors="0" failures="0" hostname="" id="" package="cadastro" skipped="0"
-    tests="1" time="1.042" timestamp="">
+    tests="1" time="1.071" timestamp="">
   
-    <testcase name="Deve estar na página de login e clicar no botão ‘Criar nova conta’" classname="cadastro.cadastroNovaConta" time="1.042" assertions="4">
+    <testcase name="Deve estar na página de login e clicar no botão ‘Criar nova conta’" classname="cadastro.cadastroNovaConta" time="1.071" assertions="4">
 
     
 
