@@ -5,10 +5,10 @@ module.exports = {
     '@tags': ['login-correto'],
 
     before: function (browser) {
-        browser.page.loginPage.login().navigate()
+        browser.page.loginPage.loginPage().navigate()
     },
     'Deve estar na página de login e inserir os dados válidos de email/telefone e senha e entrar': function (browser) {
-        browser.page.loginPage.login().acessoValidoFacebook()
+        browser.page.loginPage.loginPage().acessoValidoFacebook()
             .assert.containsText('@spanBemVindo', 'Bem-vindo ao Facebook, Marcos')
             .waitForElementVisible('@buttonConta', 1000)
     },

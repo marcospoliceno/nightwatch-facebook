@@ -5,9 +5,9 @@
 
   <testsuite name="login.loginIncorreto"
     errors="0" failures="0" hostname="" id="" package="login" skipped="0"
-    tests="4" time="31.00" timestamp="">
+    tests="4" time="34.79" timestamp="">
   
-    <testcase name="Cenário 1: Deve estar na página de login e  inserir o dado de email válido “marcostestvizir@gmail.com” e clicar em entrar;" classname="login.loginIncorreto" time="5.194" assertions="13">
+    <testcase name="Cenário 1: Deve estar na página de login e  inserir o dado de email válido “marcostestvizir@gmail.com” e clicar em entrar;" classname="login.loginIncorreto" time="6.015" assertions="13">
 
     
 
@@ -36,40 +36,7 @@
     
     </testcase>
   
-    <testcase name="Cenário 2: Deve estar na página de login e inserir os dados de telefone válido “4949494949” e clicar em entrar;" classname="login.loginIncorreto" time="13.68" assertions="15">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    </testcase>
-  
-    <testcase name="Cenário 3: Deve inserir os dados de email/telefone invalido  “!@#$%” e clicar em entrar;" classname="login.loginIncorreto" time="9.814" assertions="15">
+    <testcase name="Cenário 2: Deve estar na página de login e inserir os dados de telefone válido “4949494949” e clicar em entrar;" classname="login.loginIncorreto" time="16.03" assertions="15">
 
     
 
@@ -102,7 +69,40 @@
     
     </testcase>
   
-    <testcase name="Cenário 4: Deve inserir os dados de senha inválida “teste” e clicar em entrar;" classname="login.loginIncorreto" time="2.311" assertions="15">
+    <testcase name="Cenário 3: Deve inserir os dados de email/telefone invalido  “!@#$%” e clicar em entrar;" classname="login.loginIncorreto" time="10.12" assertions="15">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Cenário 4: Deve inserir os dados de senha inválida “teste” e clicar em entrar;" classname="login.loginIncorreto" time="2.620" assertions="15">
 
     
 

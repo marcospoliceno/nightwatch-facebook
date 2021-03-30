@@ -7,10 +7,10 @@ module.exports = {
     '@tags': ['login-em-branco'],
 
     before: function (browser) {
-        browser.page.loginPage.login().navigate()
+        browser.page.loginPage.loginPage().navigate()
     },
     'Deve estar na página de login, verificar os campos email/telefone e senha se estão em branco e clicar em entrar': function (browser) {
-        browser.page.loginPage.login().acessoEmBranco()
+        browser.page.loginPage.loginPage().acessoEmBranco()
             .waitForElementVisible('@imageLogin', 5000)
             .assert.containsText('@inputEmailNumber', "")
             .assert.containsText('@inputPassword', "")

@@ -11,28 +11,34 @@ Quais testes devem ser manuais ou automatizados. (justifique se quiser)
 #Caso de teste - Acesse a página de login 
 Prioridade: Alta
 Cenário: Deve verificar o acesso a pagina “https://www.facebook.com/”
-Resultados: Exibir a página de login, com a logo do facebook juntamente com o texto “O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.” ao lado deve ser exibido os inputs de email/telefone e senha, acessos a funcionalidades de recuperação de senha(link), criação de nova conta(button) e criar uma página(link); No rodapé deve ser  exibido um seletor de idiomas “favoritos” com possibilidade de adicionar outros idiomas a seção “favoritos”, logo abaixo devem ser exibidos microlinks de serviços e produtos do Facebook e ao fim deve ser exibido os direitos autorais  “copyright”.
+Resultados: Exibir a página de login, com a logo do facebook juntamente com o texto “O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.”
+ao lado deve ser exibido os inputs de email/telefone e senha, acessos a funcionalidades de recuperação de senha(link), criação de nova conta(button) e criar uma página(link);
+No rodapé deve ser  exibido um seletor de idiomas “favoritos” com possibilidade de adicionar outros idiomas a seção “favoritos”, logo abaixo devem ser exibidos microlinks
+de serviços e produtos do Facebook e ao fim deve ser exibido os direitos autorais  “copyright”.
 	
 #Caso de teste - Login com credenciais corretas
 Prioridade: Alta
 Cenário: Deve estar na página de login e  inserir os dados válidos de email/telefone “marcostestvizir@gmail.com” e senha “!@#123abc” e clicar em entrar;
-Resultados: Ao realizar a ação de entrar deve ser direcionado para a página inicial, exibindo ao canto superior direito o botão de Conta com todas as funcionalidades de usuário logado e opção de sair;
+Resultados: Ao realizar a ação de entrar deve ser direcionado para a página inicial, exibindo ao canto superior direito o botão de Conta com todas as funcionalidades
+de usuário logado e opção de sair;
  
 #Caso de teste - Login com credenciais em branco
 Prioridade: média
 Cenário: Deve estar na página de login, verificar os campos email/telefone e senha se estão em branco e clicar em entrar;
-Resultados: Ao realizar a ação de entrar deve ser direcionado para outra página exibindo o campo email/telefone(alerta) e a mensagem/alerta  “O email ou o número de celular que você inseriu não está conectado a uma conta. Encontre sua conta e entre.”  
+Resultados: Ao realizar a ação de entrar deve ser direcionado para outra página exibindo o campo email/telefone(alerta) e a mensagem/alerta  
+“O email ou o número de celular que você inseriu não está conectado a uma conta. Encontre sua conta e entre.”  
  
  
 #Casos de teste - Login com credenciais Incorretas 
 Prioridade: Alta
-Cenário 1:  Deve estar na página de login e  inserir o dado de email/telefone válido “marcostestvizir@gmail.com” e clicar em entrar;
-Cenário 2: Deve estar na página de login e inserir os dados de email/telefone válido “4949494949” e clicar em entrar;
-Resultados 1-2: Ao realizar a ação de entrar deve ser direcionado para outra página exibindo somente o campo senha e a mensagem/alerta  “A senha inserida está incorreta. Esqueceu a senha?” possibilitando acessar o link Esqueceu a senha, diretamente pela mensagem/alerta ou por um segundo link logo abaixo;
- 
+Cenário 1: Deve estar na página de login e  inserir o dado de email válido “marcostestvizir@gmail.com” e clicar em entrar;
+Cenário 2: Deve estar na página de login e inserir os dados de telefone válido “4949494949” e clicar em entrar;
+Resultados 1-2: Ao realizar a ação de entrar deve ser direcionado para outra página exibindo somente o campo senha e a mensagem/alerta  
+“A senha inserida está incorreta. Esqueceu a senha?” possibilitando acessar o link Esqueceu a senha, diretamente pela mensagem/alerta ou por um segundo link logo abaixo;
 Cenário 3: Deve inserir os dados de email/telefone invalido  “!@#$%” e clicar em entrar;
 Cenário 4: Deve inserir os dados de senha inválida “teste” e clicar em entrar;
-Resultados 3-4: Ao realizar a ação de entrar deve ser direcionado para outra página exibindo o campo email/telefone(alerta) e a mensagem/alerta  “O email ou o número de celular que você inseriu não está conectado a uma conta. Encontre sua conta e entre.” 
+Resultados 3-4: Ao realizar a ação de entrar deve ser direcionado para outra página exibindo o campo email/telefone(alerta) e a mensagem/alerta  
+“O email ou o número de celular que você inseriu não está conectado a uma conta. Encontre sua conta e entre.” 
  
 #Casos de teste - Acesse a página Esqueceu sua senha 
 Prioridade: Baixa

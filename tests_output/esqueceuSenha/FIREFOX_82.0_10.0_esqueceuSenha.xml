@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="esqueceuSenha.esqueceuSenha"
+    errors="1" failures="0" hostname="" id="" package="esqueceuSenha" skipped="0"
+    tests="1" time="1.659" timestamp="">
+  
+    <testcase name="Deve estar na página de login e clicar no link Esqueceu a senha" classname="esqueceuSenha.esqueceuSenha" time="1.659" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <error message="Error while running &#34;visible&#34; command: this.message.includes is not a function" type="error"><![CDATA[
+    TypeError: Error while running &#34;visible&#34; command: this.message.includes is not a function
+    at AssertionInstance.initialize (C:\Users\Marcos Policeno\Desktop\nightwatch-facebook\node_modules\nightwatch\lib\api\assertions\_assertionInstance.js:34:24)
+    at Object.module.exports.create (C:\Users\Marcos Policeno\Desktop\nightwatch-facebook\node_modules\nightwatch\lib\api\assertions\_assertionInstance.js:207:12)
+    at C:\Users\Marcos Policeno\Desktop\nightwatch-facebook\node_modules\nightwatch\lib\api\_loaders\assertion.js:98:48
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    ]]></error>
+    
+    </testcase>
+  
+
+  
+    <system-err>
+        TypeError: Error while running &#34;visible&#34; command: this.message.includes is not a function
+   - writing an ES6 async test case? - keep in mind that commands return a Promise; 
+   - writing unit tests? - make sure to specify &#34;unit_tests_mode=true&#34; in your config.
+       at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    </system-err>
+  
+
+    
+
+  
+  </testsuite>
+</testsuites>

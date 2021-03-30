@@ -9,14 +9,14 @@ module.exports = {
     '@tags': ['acesso-login'],
 
     before: function (browser) {
-        browser.page.loginPage.login().navigate()
+        browser.page.loginPage.loginPage().navigate()
     },
     'Acesse a página de login facebook.com ': function (browser) {
-        browser.page.loginPage.login()
+        browser.page.loginPage.loginPage()
             .assert.urlEquals("https://www.facebook.com/")
     },
     'Verificação de formulario de login email e senha': function (browser) {
-        browser.page.loginPage.login()
+        browser.page.loginPage.loginPage()
             .assert.containsText('@titleMessage', 'O Facebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.')
             .assert.containsText('@inputEmailNumber', "")
             .assert.attributeContains('@inputEmailNumber', 'placeholder', 'Email ou telefone')
@@ -32,7 +32,7 @@ module.exports = {
             .assert.attributeContains('@linkCriarPagina', 'href', data.urls.urlNovaPagina)
     },
     'Verificação dados rodapé da pagina - Idiomas/Produtos/Direitos ': function (browser) {
-        browser.page.loginPage.login()
+        browser.page.loginPage.loginPage()
             .assert.containsText('@listIdiomas', 'Português (Brasil)')
             .assert.containsText('@listIdiomasIngles', 'English (US)')
             .assert.attributeContains('@listIdiomasIngles', 'href', data.urls.urlIdiomaIngles)

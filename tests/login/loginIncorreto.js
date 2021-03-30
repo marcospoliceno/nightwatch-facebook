@@ -12,10 +12,10 @@ module.exports = {
     '@tags': ['login-incorreto'],
 
     beforeEach: function (browser) {
-        browser.page.loginPage.login().navigate()
+        browser.page.loginPage.loginPage().navigate()
     },
     'Cenário 1: Deve estar na página de login e  inserir o dado de email válido “marcostestvizir@gmail.com” e clicar em entrar;': function (browser) {
-        browser.page.loginPage.login().emailValido()
+        browser.page.loginPage.loginPage().emailValido()
             .assert.containsText('@formLoginNameEnter', 'Entrar como Marcos Testes')
             .assert.containsText('@formLoginEmail', 'marcostestvizir@gmail.com')
             .assert.attributeContains('@linkNaoEVoce', 'href', data.urls.urlNaoEVoce)
@@ -29,7 +29,7 @@ module.exports = {
             .assert.cssProperty('@linkEsqueceuSenhaFormLogin', 'color', 'rgb(28, 30, 33)')
     },
     'Cenário 2: Deve estar na página de login e inserir os dados de telefone válido “4949494949” e clicar em entrar;': function (browser) {
-        browser.page.loginPage.login().telefoneValido()
+        browser.page.loginPage.loginPage().telefoneValido()
             .waitForElementVisible('@formLoginTelefoneSpanEntrar', 20000)
             .assert.attributeContains('@imageLogin', 'src', data.urls.urlImageFacebook)
             .assert.containsText('@formLoginTelefoneSpanEntrar', 'Entrar no Facebook')
@@ -45,7 +45,7 @@ module.exports = {
             .assert.cssProperty('@linkEsqueceuSenhaFormLogin', 'color', 'rgb(28, 30, 33)')
     },
     'Cenário 3: Deve inserir os dados de email/telefone invalido  “!@#$%” e clicar em entrar;': function (browser) {
-        browser.page.loginPage.login().emailTelefoneInvalido()
+        browser.page.loginPage.loginPage().emailTelefoneInvalido()
             .waitForElementVisible('@formLoginTelefoneSpanEntrar', 20000)
             .assert.attributeContains('@imageLogin', 'src', data.urls.urlImageFacebook)
             .assert.containsText('@formLoginTelefoneSpanEntrar', 'Entrar no Facebook')
@@ -62,7 +62,7 @@ module.exports = {
 
     },
     'Cenário 4: Deve inserir os dados de senha inválida “teste” e clicar em entrar;': function (browser) {
-        browser.page.loginPage.login().senhaInvalida()
+        browser.page.loginPage.loginPage().senhaInvalida()
             .waitForElementVisible('@formLoginTelefoneSpanEntrar', 20000)
             .assert.attributeContains('@imageLogin', 'src', data.urls.urlImageFacebook)
             .assert.containsText('@formLoginTelefoneSpanEntrar', 'Entrar no Facebook')
