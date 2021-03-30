@@ -2,7 +2,7 @@
 as funcionalidades de usuário logado e opção de sair;*/
 module.exports = {
 
-    '@tags': ['acesso-valido'],
+    '@tags': ['login-correto'],
 
     before: function (browser) {
         browser.page.loginPage.login().navigate()

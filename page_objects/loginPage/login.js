@@ -1,24 +1,49 @@
 const data = require('../../data/globalData');
 module.exports = {
     commands: {
-        pesquisaDesbravador: function () {
-            return this.pause(100)
-                .waitForElementPresent('@buttonPesquisa', 5000)
-                .waitForElementPresent('@buttonEstouComSorte', 5000)
-                .setValue('@inputPesquisar', 'desbravador software')
-                .waitForElementVisible('@linkDenunciar', 2000)
-                .click('@buttonPesquisa')
-        },
-        acessoSiteDesbravador: function () {
-            return this.pause(100)
-                .click('@buttonWebSiteDesbravador')
-        },
         acessoValidoFacebook: function () {
             return this.pause(100)
                 .waitForElementVisible('@inputEmailNumber', 5000)
                 .waitForElementVisible('@inputPassword', 5000)
                 .setValue('@inputEmailNumber', data.login.user)
                 .setValue('@inputPassword', data.login.pass)
+                .waitForElementVisible('@buttonEntrar', 1000)
+                .click('@buttonEntrar')
+        },
+        acessoEmBranco: function () {
+            return this.pause(100)
+                .waitForElementVisible('@inputEmailNumber', 5000)
+                .waitForElementVisible('@inputPassword', 5000)
+                .setValue('@inputEmailNumber', "")
+                .setValue('@inputPassword', "")
+                .waitForElementVisible('@buttonEntrar', 1000)
+                .click('@buttonEntrar')
+        },
+        emailValido: function () {
+            return this.pause(100)
+                .waitForElementVisible('@inputEmailNumber', 5000)
+                .setValue('@inputEmailNumber', "marcostestvizir@gmail.com")
+                .waitForElementVisible('@buttonEntrar', 1000)
+                .click('@buttonEntrar')
+        },
+        telefoneValido: function () {
+            return this.pause(100)
+                .waitForElementVisible('@inputEmailNumber', 5000)
+                .setValue('@inputEmailNumber', '4949494949')
+                .waitForElementVisible('@buttonEntrar', 1000)
+                .click('@buttonEntrar')
+        },
+        emailTelefoneInvalido: function () {
+            return this.pause(100)
+                .waitForElementVisible('@inputEmailNumber', 5000)
+                .setValue('@inputEmailNumber', '!@#$%')
+                .waitForElementVisible('@buttonEntrar', 1000)
+                .click('@buttonEntrar')
+        },
+        senhaInvalida: function () {
+            return this.pause(100)
+                .waitForElementVisible('@inputPassword', 5000)
+                .setValue('@inputPassword', 'teste')
                 .waitForElementVisible('@buttonEntrar', 1000)
                 .click('@buttonEntrar')
         }
@@ -46,7 +71,16 @@ module.exports = {
         buttonAdicionarIdiomas: { locateStrategy: 'xpath', selector: '//*[@id="pageFooter"]/ul/li[11]/a' },
         spanBemVindo: "[role='main'] span",
         buttonConta: "[aria-label='Conta']",
-        // spanBemVindo: {locateStrategy: 'xpath', selector: '//*[@id="mount_0_0_vN"]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div/div[2]/div/div/div[1]/span'},
+        imageLogin: '[alt="Facebook"]',
+        alertEmailLogin: "div._9ay7",
+        alertEmailLoginLink: "div._9ay7 a",
+        linkNaoEVoce: '#not_me_link',
+        linkEsqueceuSenhaFormLogin: '#login_link',
+        buttonContaGoogle: { locateStrategy: 'xpath', selector: '//*[@id="loginform"]/div[4]/div/a' },
+        formLoginNameEnter: { locateStrategy: 'xpath', selector: '//*[@id="header_block"]/span/div/div[1]/div[2]/span' },
+        formLoginEmail: { locateStrategy: 'xpath', selector: ' //*[@id="header_block"]/span/div/div[2]' },
+
+        formLoginTelefoneSpanEntrar: { locateStrategy: 'xpath', selector: '//*[@id="header_block"]/span/div' },
 
         footerCadastrese: "#pageFooterChildren > ul > li:nth-child(1) > a",
         footerEntrar: "#pageFooterChildren > ul > li:nth-child(2) > a",

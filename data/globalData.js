@@ -7,6 +7,9 @@ module.exports = {
         urlFacebook: 'https://www.facebook.com/',
         urlEsqueceuSenha: 'https://www.facebook.com/recover/initiate/?ars=facebook_login',
         urlNovaPagina: '/pages/create/?ref_type=registration_form',
+        urlImageFacebook: 'https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg',
+        urlEncontreSuaConta: "/login/identify/",
+        urlNaoEVoce: 'notme.php',
 
         urlIdiomaIngles: 'https://www.facebook.com/',
         urlIdiomaEspanhol: 'https://es-la.facebook.com/',

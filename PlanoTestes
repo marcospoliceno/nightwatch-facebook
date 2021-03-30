@@ -15,12 +15,12 @@ Resultados: Exibir a página de login, com a logo do facebook juntamente com o t
 	
 #Caso de teste - Login com credenciais corretas
 Prioridade: Alta
-Cenário: Deve estar na página de login e  inserir os dados válidos de email/telefone “	” e senha “!@#123abc” e clicar em entrar;
+Cenário: Deve estar na página de login e  inserir os dados válidos de email/telefone “marcostestvizir@gmail.com” e senha “!@#123abc” e clicar em entrar;
 Resultados: Ao realizar a ação de entrar deve ser direcionado para a página inicial, exibindo ao canto superior direito o botão de Conta com todas as funcionalidades de usuário logado e opção de sair;
  
 #Caso de teste - Login com credenciais em branco
 Prioridade: média
-Cenário: Deve estar na página de login e clicar em entrar;
+Cenário: Deve estar na página de login, verificar os campos email/telefone e senha se estão em branco e clicar em entrar;
 Resultados: Ao realizar a ação de entrar deve ser direcionado para outra página exibindo o campo email/telefone(alerta) e a mensagem/alerta  “O email ou o número de celular que você inseriu não está conectado a uma conta. Encontre sua conta e entre.”  
  
  
