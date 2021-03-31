@@ -29,11 +29,13 @@ $ npm test
 ```
 #### Test tags
 ```sh
-$ npm test -- --tag <nameTag>
+$ npm test -- --tag <nameTag> 
+acesso-login - login-incorreto - login-correto - login-em-branco - esqueceu-senha - criar-conta
 ```
 #### Test Group
 ```sh
 $ npm test --group <group>
+login - cadastro - esqueceuSenha
 ```
 __Windows users__ might need to run `node node_modules/.bin/nightwatch`.
 
