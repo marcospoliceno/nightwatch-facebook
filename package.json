@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "nightwatch",
-    "login": "nightwatch --group login"
+    "login": "nightwatch --group login",
+    "cadastro": "nightwatch --group cadastro",
+    "esqueceuSenha": "nightwatch --group esqueceuSenha"
   },
   "repository": {
     "type": "git",

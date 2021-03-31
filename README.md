@@ -1,5 +1,5 @@
 # Projeto de testes automatizados com Nightwatchjs
-- Login facebook
+- Tela de Login facebook modo web
 
 ## Para Iniciar e realizar a primeira execução:
 
@@ -23,13 +23,9 @@ or install everything with one line:
 $ npm i nightwatch geckodriver chromedriver --save-dev
 ```
 #### 3. Run Test:
-#### All Tests 
+#### All Tests/Regression
 ```sh
 $ npm test 
-```
-#### RegressionTest
-```sh
-$ npm test regression 
 ```
 #### Test tags
 ```sh
@@ -39,6 +35,5 @@ $ npm test -- --tag <nameTag>
 ```sh
 $ npm test --group <group>
 ```
-
 __Windows users__ might need to run `node node_modules/.bin/nightwatch`.
 
